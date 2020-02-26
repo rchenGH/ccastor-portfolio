@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(240,240,240,1);
+}
+
+.logo{
+    color: black;
+    text-transform: uppercase;
+}
