@@ -1,109 +1,121 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-  }
-  
-  .container{
-    display:block;
-    flex: 100%;
-    padding-right: auto;
-    padding-left: auto;
-  }
-  
-  .row{
-    display: flex;
-    flex: 100%;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  
-  .column-1{
-    display: inline;
-    flex: calc((95%/12));
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-2{
-    display: inline;
-    flex: calc((95%/12)*2);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-3{
-    display: inline;
-    flex: calc((95%/12)*3);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-4{
-    display: inline;
-    flex: calc((95%/12)*4);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-5{
-    display: inline;
-    flex: calc((95%/12)*5);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-6{
-    display: inline;
-    flex: calc((95%/12)*6);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-7{
-    display: inline;
-    flex: calc((95%/12)*7);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-8{
-    display: inline;
-    flex: calc((95%/12)*8);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-9{
-    display: inline;
-    flex: calc((95%/12)*9);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-10{
-    display: inline;
-    flex: calc((95%/12)*10);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-11{
-    display: inline;
-    flex: calc((95%/12)*11);
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  .column-12{
-    display: inline;
-    flex: 95%;
-    padding-left: calc(5%/4);
-    padding-right: calc(5%/4);
-  }
-  
-  
-  
-  @media only screen and (max-flex: 768px) {
-      /* For mobile phones: */
-      [class*="column-"] {
-          flex: 100%;
-      }
-  
-  }
-  @media only screen and (max-width: 768px) {
-    .column-body{
-      padding-top: 50px;
-    }
-  }
-  
+.gallery-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grey-background {
+    background-color: rgba(0,0,0,0.2);
+    height: 188vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.portfolio-body {
+  height: 10vh;
+}
+
+.main{
+  z-index: 1;
+  height: 100vh;
+  padding-top: 150px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.image-list {
+  /* z-index: 2; */
+  max-height: 300px;
+  width: calc(90%);
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.image-wrap {
+  text-decoration: none;
+  width: calc(90%);
+  margin: 20px auto 15px auto;
+  z-index: -3;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px -35px rgba(0, 0, 0, 0.1), 0px 5px 7px rgba(0, 0, 0, 0.10); 
+}
+
+.image-item {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery-wrapper {
+  text-align:center;
+  height: 1000px;
+}
+
+.circle-wrap{
+  background-color: transparent;
+  perspective: 1000px;
+  height: 130px;
+  width: 130px;
+  transform: translateY(-175px);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.circle-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.2), 0px 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+.circle-wrap:hover .circle-inner{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.circle-front, .circle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.circle-front {
+  position: absolute;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.circle-back {
+  position: absolute;
+  background-color: rgba(255,250,255,1);
+  transform: rotateY(180deg);
+}
+
+.circle-front, .circle-back, .circle-inner {
+  border-radius: 50%;
+}
+
+.circle-text{
+  color: rgba(180,170,221,1);
+  padding-top: 55px;
+}
