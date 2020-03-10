@@ -1,15 +1,20 @@
+
 document.addEventListener("DOMContentLoaded", function(event) { 
-    const mainComponent = () => {
+    mainContent = () => {
         const portfolioBody = document.querySelector('.portfolio-body');
-        const main =       
+
+        const mainContainer =       
         `<article class='main'>
             <div class='container'>
-                <ul class='row image-ul'>
-                </div>
+                <ul id='image-ul-id' class='row image-ul'>
+
+                </ul>
             </div>
         </article>`;
-        portfolioBody.innerHTML += main;
+        portfolioBody.insertAdjacentHTML('beforeend', mainContainer);
     }
-    mainComponent()
-
+    mainContent()
   });
+
+  
+

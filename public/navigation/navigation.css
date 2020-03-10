@@ -23,11 +23,10 @@ nav{
     display: flex;
     z-index: 3;
     justify-content: space-around;
-    width: 500px;
+    min-width: 680px;
     text-decoration: none;
     list-style-type: none;
     height: 90px;
-    min-width: 500px;
     width: 70%;
     margin: 0 auto -100px auto;
     padding-left: 0px;
@@ -45,6 +44,10 @@ nav{
     height: 55px;
     padding-top: 18px;
     margin-top: 15px;
+}
+
+.nav-links a {
+    padding: 15%;
 }
 
 .nav-links li:first-child{
@@ -95,6 +98,7 @@ nav{
         position: absolute;
         right: 0px;
         height: 100%;
+        min-width: auto;
         top: 8vh;
         display: flex;
         flex-direction: column;
@@ -103,11 +107,13 @@ nav{
         transform: translateX(100%);
         justify-content: unset; 
         transition: transform 0.35s ease-in;
-    }
-
-    .nav-links{
         box-shadow: 0 3px 30px grey;
         background-color: rgba(250,250,250,1);
+        border-radius: 0%;
+    }
+
+    .nav-links a{
+        padding: 0px;
     }
 
     .nav-links li {
@@ -119,6 +125,8 @@ nav{
         border-right: none;
         height: 55px;
     }
+
+
 
     .nav-links a {
         font-size: 13px;

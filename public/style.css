@@ -18,10 +18,10 @@
 .main{
   z-index: 1;
   height: 100vh;
-  padding-top: 150px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding: 200px 70px 0 70px;
 }
 
 .image-ul {
@@ -31,12 +31,11 @@
 
 .image-list {
   /* z-index: 2; */
-  max-height: 300px;
+  max-height: 325px;
   width: calc(90%);
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  min-width: 300px;
   max-width: 400px;
 }
 
@@ -51,7 +50,7 @@
 }
 
 .image-item {
-  height: 250px;
+  height: 275px;
   background-position: center;
   background-size: cover;
   margin-right: auto;
@@ -68,7 +67,7 @@
   perspective: 1000px;
   height: 130px;
   width: 130px;
-  transform: translateY(-175px);
+  transform: translateY(-200px);
   margin-right: auto;
   margin-left: auto;
   border-radius: 50%;
@@ -113,9 +112,24 @@
 
 .circle-front, .circle-back, .circle-inner {
   border-radius: 50%;
+  display:table;
 }
 
 .circle-text{
   color: rgba(180,170,221,1);
-  padding-top: 55px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+@media screen and (max-width: 768px){
+  .main{
+    padding: 100px 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .main{
+    padding: 100px 0 0 0;
+  }
 }
