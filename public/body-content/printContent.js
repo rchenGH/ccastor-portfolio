@@ -3,72 +3,72 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let printObj = [
         {    
             title: '6th-Street',
-            snippet: 'Front and back',
+            description: 'Front and back',
             image: 'print-media/6th-street-shirt.jpg'
         },
         {
             title: 'Gogol',
-            snippet: 'Brochure',
+            description: 'Brochure',
             image: 'print-media/coldwell-gogol.jpg'
         },
         {
             title: 'Kaprielian',
-            snippet: 'Brochure',
+            description: 'Brochure',
             image: 'print-media/coldwell-kaprielian.jpg'
         },
         {
             title: 'Floors',
-            snippet: 'Overhead view',
+            description: 'Overhead view',
             image: 'print-media/floors.jpg'
         },
         {
             title: 'Fourth Meal',
-            snippet: 'Restaurant Ad',
+            description: 'Restaurant Ad',
             image: 'print-media/fourthmeal.jpg'
         },
         {
             title: 'Invitation',
-            snippet: 'Wedding Invitation',
+            description: 'Wedding Invitation',
             image: 'print-media/invitation.jpg'
         },
         {
             title: 'Overview',
-            snippet: 'Bird\'s Eye View Layout',
+            description: 'Bird\'s Eye View Layout',
             image: 'print-media/overview.jpg'
         },
         {
             title: 'RPC Prices',
-            snippet: 'Registration Cost',
+            description: 'Registration Cost',
             image: 'print-media/red-pill-price.png'
         },
         {
             title: 'RPC List',
-            snippet: 'Top 10',
+            description: 'Top 10',
             image: 'print-media/red-pill-top-10.png'
         },
         {
             title: 'RPC Cover',
-            snippet: 'Poster',
+            description: 'Poster',
             image: 'print-media/red-pill.jpg'
         },
         {
             title: 'Royal Family',
-            snippet: 'Sign',
+            description: 'Sign',
             image: 'print-media/royal-family.png'
         },
         {
             title: 'RSVP',
-            snippet: 'Details',
+            description: 'Details',
             image: 'print-media/rsvp-details.jpg'
         },
         {
             title: 'Restaurant Ads - First Set',
-            snippet: 'Printed Ads',
+            description: 'Printed Ads',
             image: 'print-media/taco-wall-1.jpg'
         },
         {
             title: 'Restaurant Ads - Second Set',
-            snippet: 'Printed Ads',
+            description: 'Printed Ads',
             image: 'print-media/taco-wall-2.jpg'
         },
     ]
@@ -77,17 +77,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         imageUlId.insertAdjacentHTML('beforeend', 
         `
         <li class="image-list column-12-xs column-6-sm column-4-md column-3-lg column-3-xl column-2-xxl">
-            <div class='image-wrap'>
-                <div class='image-item' style="background-image: url(${printObj[i].image});">
-                </div>
-            </div>
-            <div class="circle-wrap">
-                <div class="circle-inner">
-                    <div class="circle-front">
-                        <p class="circle-text">${printObj[i].title}</p>
+            <div class="card-wrap image-wrap">
+                <div class="card-inner">
+                    <div class="card-front image-item" style="background-image: url(${printObj[i].image});">
                     </div>
-                    <div class="circle-back">
-                        <p class="circle-text">${printObj[i].snippet}</p>
+                    <div class="card-back" style="background-image: url('images/spiration-light.png');>
+                        <p class="card-text">${printObj[i].title}</p>
+                        <p class="card-text">${printObj[i].description}</p>
                     </div>
                 </div>
             </div>
