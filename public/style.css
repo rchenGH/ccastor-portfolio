@@ -1,6 +1,7 @@
 * {
   margin: 0;
   margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   color: rgba(230, 135, 180, 1);
@@ -39,10 +40,15 @@
 
 .image-list {
   max-height: 325px;
+  height: 300px;
   width: calc(90%);
   margin-right: auto;
   margin-left: auto;
   max-width: 400px;
+}
+
+.hide {
+  display: none;
 }
 
 .image-wrap {
@@ -141,6 +147,21 @@
   height: 1px;
   margin: 20px auto 0px auto;
   width: 70%;
+}
+
+.card-animation{
+  animation-name: card-animation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
+}
+
+@keyframes card-animation{
+  0% {transform: translateY(100px);
+      opacity: 0;}
+  100% {transform: translateY(0px);
+      opacity:1;
+  }
 }
 
 @media screen and (max-width: 768px){

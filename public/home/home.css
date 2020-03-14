@@ -1,0 +1,51 @@
+.name-text {
+    font-family: 'Questrial';
+    margin-top: 50px;
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-left: 5%;
+    margin-bottom: 70px;
+}
+
+.home-hr{
+    width: 200px;
+    background-color: rgba(230, 135, 180, 1);
+    height: 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+.home-hr-1 {
+    margin-top: 60px;
+    margin-left: 5%;
+}
+
+.home-hr-2 {
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.home-snippet {
+    font-family: 'Questrial';
+    margin-top: 100px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-left: 5%;
+}
+
+.home-img, .overlay {
+    height: auto;
+    width: 50vw;
+    position: absolute;
+}
+
+.home-img {
+    filter: brightness(1.2);
+}
+
+.overlay {
+    background-color: rgba(230, 135, 180, 0.5);
+    transform: translate(400px, -500px);
+    z-index: 3
+}

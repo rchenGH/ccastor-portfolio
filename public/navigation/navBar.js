@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         `<nav class='portfolio-nav'>
             <div class='grey-background hide-class'></div>
             <div class='logo'>
-                <h4>Cyndi Castor</h4>
+                <div>Cyndi Castor</div>
             </div>
             <ul class='nav-links toggle-shadow'>
                 <li><a href="../public/index.html" class="link-text"><span style="color:transparent";>------</span>HOME<span style="color:transparent";>------</span></a></li>
