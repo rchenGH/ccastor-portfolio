@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  color: rgba(230, 135, 180, 1);
+}
+
 .gallery-container {
   margin-right: auto;
   margin-left: auto;
@@ -100,14 +108,39 @@
 .card-back {
   position: absolute;
   transform: rotateY(180deg);
+  vertical-align: middle;
 }
 
 .card-front, .card-back, .card-inner {
   display:table;
 }
 
-.card-text{
+.card-title {
   color: rgba(180,170,221,1);
+  font-weight: 500;
+  font-size: 14px;
+  width: 80%;
+  margin: 50px auto 0 auto;
+  letter-spacing: 2px;
+}
+
+.card-snippet{
+  color: rgba(180,170,221,1);
+  font-weight: 100;
+  width: 70%;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 30px auto 0 auto;
+  letter-spacing: 2px;
+}
+
+.hr-line {
+  background: linear-gradient(to right, rgba(180,170,221,0), rgba(180,170,221,1), rgba(180,170,221,0));
+  border: none;
+  height: 1px;
+  margin: 20px auto 0px auto;
+  width: 70%;
 }
 
 @media screen and (max-width: 768px){

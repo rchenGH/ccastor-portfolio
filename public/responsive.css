@@ -1,12 +1,4 @@
 /* 576, 768, 992, 1200 */
-
-* {
-    margin: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    color: rgba(230, 135, 180, 1);
-  }
   
 .container{
     width: 100%;
