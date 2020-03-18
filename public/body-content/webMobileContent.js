@@ -1,5 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", function(event) { 
+    
     let imageUlId = document.querySelector('#image-ul-id');
+    
     let webMobileObj = [
         {    
             title: 'App Store Images',

@@ -1,51 +1,123 @@
+.home-wrapper {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .name-text {
     font-family: 'Questrial';
-    margin-top: 50px;
     font-size: 100px;
     font-weight: 100;
-    letter-spacing: 4px;
-    margin-left: 5%;
-    margin-bottom: 70px;
+    letter-spacing: 6px;;
+    margin: 50px 0 50px -50px;
+}
+
+.name-animation {
+    animation-name: name-animation;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1.5s;
+}
+
+@keyframes name-animation {
+    0% { 
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.hr-2-animation {
+    animation-name: hr-2-animation;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 2.5s;
+}
+
+@keyframes hr-2-animation {
+    0% { 
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .home-hr{
-    width: 200px;
-    background-color: rgba(230, 135, 180, 1);
+    width: 150px;
+    background-color: rgba(255,127,137,1);
     height: 4px;
     border-radius: 5px;
     border: none;
 }
 
 .home-hr-1 {
-    margin-top: 60px;
-    margin-left: 5%;
+    margin-left: -50px;
 }
 
 .home-hr-2 {
-    margin-top: 30px;
-    margin-left: 10%;
+    margin-top: 20px;
 }
 
 .home-snippet {
-    font-family: 'Questrial';
-    margin-top: 100px;
-    font-size: 40px;
+    font-size: 30px;
+    margin-top: 70px;
     letter-spacing: 2px;
-    margin-left: 5%;
+    font-family: 'Questrial';
+    margin-left: -50px;
+    text-align: right;
 }
 
-.home-img, .overlay {
-    height: auto;
-    width: 50vw;
-    position: absolute;
+.snippet-animation {
+    animation-name: snippet-animation;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1.5s;
 }
 
-.home-img {
-    filter: brightness(1.2);
+@keyframes snippet-animation {
+    0% { 
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
-.overlay {
-    background-color: rgba(230, 135, 180, 0.5);
-    transform: translate(400px, -500px);
-    z-index: 3
+.contact-btn{
+    width: 175px;
+    background-color: rgba(255,127,137,1);
+    border-radius: 100px;
+    color: white;
+    height: 70px;
+    border: none;
+    font-size: 14px;
+    margin-left: -50px;
+    margin-top: 50px;
+    float:right;
+}
+
+.contact-animation {
+    animation-name: contact-animation;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 1.5s;
+}
+
+@keyframes contact-animation {
+    0% { 
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }

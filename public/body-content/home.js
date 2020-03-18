@@ -4,16 +4,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function content(){
         homeContainer.insertAdjacentHTML('beforeend',
             `
-            <div>
-                <div class="name-text">
-                    CYNDI CASTOR
+            <div class="home-wrapper container">
+                <div class="name-text row name-animation">
+                    Cyndi Castor
                 </div>
 
-                <hr class="home-hr home-hr-1">
-                <hr class="home-hr home-hr-2">
+                <hr class="home-hr home-hr-1 name-animation">
+                <hr class="home-hr home-hr-2 hr-2-animation">
                 
-                <div class="home-snippet">
+                <div class='home-snippet snippet-animation'>
                     graphic design & calligraphy
+                </div>
+
+                <button class='contact-btn contact-animation'>
+                    CONTACT
+                </button>
+                
+                <div class="home-snippet row">
+                    <div class="column-2-md">
+                    </div>
                 </div>
 
             </div>
@@ -22,5 +31,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     content();
 })
-    // <img class="home-img" src="calligraphy/large/pearl.jpg" />
-    // <div class="overlay"></div>

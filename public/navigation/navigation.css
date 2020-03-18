@@ -23,7 +23,7 @@ nav{
     display: flex;
     z-index: 3;
     justify-content: space-around;
-    min-width: 680px;
+    min-width: 575px;
     text-decoration: none;
     list-style-type: none;
     height: 90px;
