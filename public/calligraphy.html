@@ -6,18 +6,30 @@
             <meta name="description" content="Portfolio Page of Cyndi Castor">
             <meta name="keywords" content="portfolio, cyndi castor, cyndi, castor">
             <title>Cyndi Castor Portfolio</title>
+            <script src="navigation/navBar.js"></script>
+            <script src="body-content/mainContent.js"></script>
+            <script src="body-content/calligraphyContent.js"></script>
+            <script src="modal/modal.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="stylesheet" type="text/css" href="responsive.css">
             <link rel="stylesheet" type="text/css" href="../public/navigation/navigation.css">
             <link rel="stylesheet" type="text/css" href="../public/modal/modal.css">
+            <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyDieBpWa7F0U_y7lO1rk4dwCrvDy9zYe0Y",
+                    authDomain: "https://portfolio-300f1.firebaseapp.com",
+                    databaseURL: "https:///portfolio-300f1.firebaseio.com",
+                    projectId: "portfolio-300f1",
+                    storageBucket: "portfolio-300f1.appspot.com",
+                    messagingSenderId: "295447298022",
+                };
+                firebase.initializeApp(config);
+            </script>
         </head>
         <body class='portfolio-body'>
         </body>
-        <script src="navigation/navBar.js"></script>
-        <script src="body-content/mainContent.js"></script>
-        <script src="body-content/calligraphyContent.js"></script>
-        <script src="modal/modal.js"></script>
-
     </html>
