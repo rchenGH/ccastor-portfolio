@@ -121,3 +121,14 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 576px){
+    .name-text {
+        font-size: 80px;
+    }
+
+    .home-snippet {
+        font-size: 25px;
+    }
+}
+

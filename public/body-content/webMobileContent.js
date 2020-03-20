@@ -145,33 +145,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
     content = () => {
         imageUlId.insertAdjacentHTML('beforeend',
             `
-            <div class="modal container">
-                <div class="modal-content row">
-                    <div class='close-button-wrap'>
-                        <div class="close-btn">&times</div>
-                    </div>
-                    <div class="modal-image-wrapper-parent">
-                        <div class="modal-image-wrapper">
+                <div class="modal container">
+                    <div class="modal-content row">
+                        <div class='close-button-wrap'>
+                            <div class="close-btn">&times</div>
                         </div>
-                    </div>
-                    <div class='modal-description-bar'>
-                        <div class="caret-wrapper">
-                            <div class="modal-caret modal-caret-down">
-                                <img class="caret-icon caret-pink" src="modal/images/caret-pink.png" />
-                                <img class="caret-icon caret-red hide" src="modal/images/caret-red.png" />
+                        <div class="modal-image-wrapper-parent">
+                            <div class="modal-image-wrapper">
+                            </div>
+                            <div class='modal-description-bar'>
+                                <div class="caret-wrapper">
+                                    <div class="modal-caret modal-caret-down">
+                                        <img class="caret-icon caret-pink" src="modal/images/caret-pink.png" />
+                                        <img class="caret-icon caret-red hide" src="modal/images/caret-red.png" />
+                                    </div>
+                                </div>
+                                <div class="modal-description-title hide">
+                                </div>
+                                <hr class="modal-description-hr hide" />
+                                <div class="modal-description-text hide">
                             </div>
                         </div>
-                        <div class="modal-description-title hide">
-                        </div>
-                        <hr class="modal-description-hr hide" />
-                        <div class="modal-description-text hide">
-                        </div>
                     </div>
-
                 </div>
-               
-            </div>
- 
             `
         )
 

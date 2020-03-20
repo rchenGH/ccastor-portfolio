@@ -12,14 +12,6 @@
   margin-left: auto;
 }
 
-.grey-background {
-    background-color: rgba(0,0,0,0.2);
-    height: 188vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-}
-
 .portfolio-body {
   height: 10vh;
 }
@@ -27,7 +19,6 @@
 .main{
   z-index: 1;
   height: 100vh;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding: 200px 70px 0 70px;
