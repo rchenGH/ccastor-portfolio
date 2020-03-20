@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     graphic design & calligraphy
                 </div>
 
-                <button class='contact-btn contact-animation'>
-                    CONTACT
-                </button>
+                <div class='home-snippet snippet-animation'>
+                    portfolio
+                </div>
                 
                 <div class="home-snippet row">
                     <div class="column-2-md">

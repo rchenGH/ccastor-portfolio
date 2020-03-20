@@ -1,121 +1,80 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
-    
     let imageUlId = document.querySelector('#image-ul-id');
-
-    let printObj = [
+    let calligraphyObj = [
         {    
-            title: '6th-Street',
-            snippet: 'Front and back',
-            description: 'Front and back shirt design',
-            image: '6th-street-shirt.jpg',
+            title: 'Be Someone',
+            snippet: 'Pentel sign pen',
+            description: 'Modern Calligraphy - Pentel sign pen',
+            image: 'be-someone.jpg',
             timeOut: 200,
-            classItem: 'sixth-street'
+            classItem: 'be-someone'
         },
-        {
-            title: 'Gogol',
-            snippet: 'Real Estate Brochure',
-            description: 'Brochure',
-            image: 'coldwell-gogol.jpg',
+        {    
+            title: 'Walnut Ink',
+            snippet: 'Pointed Pen Copperplate',
+            description: 'Walnut Ink - Pointed Pen Copperplate',
+            image: 'walnut-ink.jpg',
             timeOut: 400,
-            classItem: 'gogol'
+            classItem: 'walnut'
         },
-        {
-            title: 'Fourth Meal',
-            snippet: 'Restaurant Ad',
-            description: 'Taco Bell Restaurant Ad',
-            image: 'fourthmeal.jpg',
+        {    
+            title: 'Candy',
+            snippet: 'Walnut Ink',
+            description: 'Walnut Ink - Copperplate.',
+            image: 'candy.jpg',
             timeOut: 600,
-            classItem: 'fourth-meal'
+            classItem: 'candy'
         },
-        {
-            title: 'Kaprielian',
-            snippet: 'Brochure',
-            description: 'Real Estate Brochure',
-            image: 'coldwell-kaprielian.jpg',
+        {    
+            title: 'Give Goodness',
+            snippet: 'Gothic broad pen calligraphy',
+            description: 'Gothic broad pen calligraphy - Pilot Parallel',
+            image: 'give-goodness.jpg',
             timeOut: 800,
-            classItem: 'kaprielian'
+            classItem: 'goodness'
         },
-        {
-            title: 'Royal Family',
-            snippet: 'Poster',
-            description: 'Team Poster (2014)',
-            image: 'royal-family.png',
+        {    
+            title: 'Homer Simpson',
+            snippet: 'Pink Water Color',
+            description: 'Pink Water Color - Pointed Pen copperplate',
+            image: 'homer-simpson.jpg',
             timeOut: 1000,
-            classItem: 'royal-family'
+            classItem: 'homer'
         },
-        {
-            title: 'Floors',
-            snippet: 'Overhead',
-            description: 'Overhead view',
-            image: 'floors.jpg',
+        {    
+            title: 'Love Letter',
+            snippet: 'Sumi Ink',
+            description: 'Sumi Ink - Pointed Pen Copperplate',
+            image: 'love-letter.png',
             timeOut: 1200,
-            classItem: 'floors'
+            classItem: 'love'
         },
-        {
-            title: 'Invitation',
-            snippet: 'Wedding Invitation',
-            description: 'Wedding Invitation',
-            image: 'invitation.jpg',
+        {    
+            title: 'Pearl',
+            snippet: 'Sumi ink',
+            description: 'Sumi Ink - Spencerian',
+            image: 'pearl.jpg',
             timeOut: 1400,
-            classItem: 'invitation'
+            classItem: 'pearl'
         },
-        {
-            title: 'Overview',
-            snippet: 'Layout',
-            description: 'Bird\'s Eye View Layout',
-            image: 'overview.jpg',
+        {    
+            title: 'Rainbow Ink',
+            snippet: 'Watercolor',
+            description: 'Watercolor - Pointed Pen Copperplate',
+            image: 'rainbow-ink.png',
             timeOut: 1600,
-            classItem: 'overview'
+            classItem: 'rainbow'
         },
-        {
-            title: 'RPC List',
-            snippet: 'Top 10',
-            description: 'Red Pill Cheer - Top 10 List',
-            image: 'red-pill-top-10.png',
+        {    
+            title: 'Traditional v Modern',
+            snippet: 'Copperplate and Traditional',
+            description: 'Traditional Copperplate and Modern Calligraphy',
+            image: 'traditional-modern.jpg',
             timeOut: 1800,
-            classItem: 'rcp-list'
-        },
-        {
-            title: 'RPC Cover',
-            snippet: 'Poster',
-            description: 'Poster',
-            image: 'red-pill.jpg',
-            timeOut: 2000,
-            classItem: 'rcp-cover'
-        },
-        {
-            title: 'RSVP',
-            snippet: 'RSVP Details',
-            description: 'RSVP Details',
-            image: 'rsvp-details.jpg',
-            timeOut: 2200,
-            classItem: 'rsvp-details'
-        },
-        {
-            title: 'Restaurant Ads - First Set',
-            snippet: 'Printed Ads',
-            description: 'Printed Ads',
-            image: 'taco-wall-1.jpg',
-            timeOut: 2400,
-            classItem: 'printed-ads-1'
-        },
-        {
-            title: 'RPC Prices',
-            snippet: 'Registration Cost',
-            description: 'Red Pill Cheer - Registration Cost',
-            image: 'red-pill-price.png',
-            timeOut: 2600,
-            classItem: 'rpc-prices'
-        },
-        {
-            title: 'Restaurant Ads - Second Set',
-            snippet: 'Printed Ads',
-            description: 'Printed Ads',
-            image: 'taco-wall-2.jpg',
-            timeOut: 2800,
-            classItem: 'printed-ad-2'
+            classItem: 'traditional'
         },
     ]
+
     content = () => {
         imageUlId.insertAdjacentHTML('beforeend',
             `
@@ -156,13 +115,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         let modalImageWrapper = document.querySelector('.modal-image-wrapper');
 
-        printObj.forEach(function(item) {
+        calligraphyObj.forEach(function(item) {
             imageUlId.insertAdjacentHTML('beforeend', 
             `
             <li class="image-list column-12-xs column-6-sm column-4-md column-3-lg column-3-xl column-2-xxl">
                 <div class="${item.classItem} hide card-wrap image-wrap">
                     <div class="card-inner">
-                        <div class="card-front image-item" style="background-image: url(print-media/small/${item.image});">
+                        <div class="card-front image-item" style="background-image: url(calligraphy/small/${item.image});">
                         </div>
                         <div class="card-back" style="background-image: url('images/spiration-light.png')";>
                             <p class="card-title">${item.title.toUpperCase()}</p>
@@ -186,17 +145,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         modalRed.forEach(function(mR, index) {
             mR.addEventListener('click', (e) => {
-                modalImageWrapper.innerHTML = `<img class="modal-large-image" src="print-media/large/${printObj[index].image}"/>`
-                descriptionTitle.innerHTML =`<p>${printObj[index].title.toUpperCase()}</p>`
+                modalImageWrapper.innerHTML = `<img class="modal-large-image" src="calligraphy/large/${calligraphyObj[index].image}"/>`
+                descriptionTitle.innerHTML =`<p>${calligraphyObj[index].title.toUpperCase()}</p>`
                 descriptionHR.innerHTML =`<hr>`
-                descriptionText.innerHTML =`<p">${printObj[index].description}</p>`
+                descriptionText.innerHTML =`<p">${calligraphyObj[index].description}</p>`
             })
         })
 
-        printObj.forEach(print => {
-            setTimeout(card, print.timeOut)
+        calligraphyObj.forEach(calligraphy => {
+            setTimeout(card, calligraphy.timeOut)
             function card() {
-                let classSelected = document.querySelector(`.${print.classItem}`)
+                let classSelected = document.querySelector(`.${calligraphy.classItem}`)
                 classSelected.classList.remove('hide');
                 classSelected.classList.add('card-animation');
             }

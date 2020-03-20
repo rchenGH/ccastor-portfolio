@@ -13,9 +13,9 @@
     height: 90vh;
     overflow: auto;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    max-width: 800px;
+    margin: 30px auto 0px auto;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
@@ -52,8 +52,14 @@
     display: none;
 }
 
+.modal-image-wrapper-parent {
+    width: 100%;
+}
+
 .modal-image-wrapper{
+    position: relative;
     height: 100%;
+    margin: 0px auto 0px auto;
 }
 
 .modal-large-image {
@@ -66,7 +72,68 @@
     position: fixed;
     height: 30px;
     width: 70%;
+    max-width: 800px;
     float: right;
+    z-index: 3;
+}
+
+.modal-description-bar {
+    position: fixed;
+    width: 70%;
+    height: 45px;
+    max-width: 800px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255,255,255,1);
+    bottom: 40.5vh;
+    box-shadow: 0px 15px 20px 20px rgba(0, 0, 0, 0.2), 0px 10px 10px rgba(0, 0, 0, 0.20);
+    transition: all 0.5s ease;
+}
+
+.modal-expand {
+    height: 150px;
+    overflow: hidden;
+}
+
+.caret-wrapper {
+    width: 70%;
+    max-width: 800px;
+    position: fixed;
+}
+
+.modal-caret {
+    width: 60px;
+    height: 60px;
+    margin: -25px auto 0px auto;
+    background-color: rgba(255,255,255,1);
+    border-radius: 50%;
+    box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.10);
+}
+
+.caret-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.modal-description-title, .modal-description-text {
+    padding-top: 10px;
+}
+
+.modal-description-title {
+    margin-top: 35px;
+}
+
+.modal-description-hr {
+    width: 200px;
+    height: 1px;
+    border: 0.5px solid rgba(244, 150, 189, 1);
+    margin: 10px auto 0px auto;
 }
 
 @media screen and (max-width: 768px){
@@ -77,8 +144,26 @@
   
     .modal-content {
         height: 80vh;
-        margin-top: 20%;
+        margin-top: 140px;
         width: 90vw;
         height: 90vh;
+    }
+
+    .modal-description-bar, .caret-wrapper, .close-button-wrap {
+        width: 90%;
+    }
+
+    .modal-description-bar {
+        bottom: 25.5vh;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .modal-large-image {
+        width: 80%;
+    }
+
+    .modal {
+        transform: translate(0px, -200px);
     }
 }

@@ -113,6 +113,7 @@
 
 .card-back {
   position: absolute;
+  padding: 0px 10px 0px 10px;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
