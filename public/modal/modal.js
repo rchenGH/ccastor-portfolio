@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     let modal = document.querySelector('.modal');
+    let modalGrey = document.querySelector('.modal-grey')
     let closeBtn = document.querySelector('.close-btn');
     let openBtn = document.querySelectorAll('.open-modal-btn');
     let modalPink = document.querySelectorAll('.modal-pink');
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function openModal() {
         modal.style.display = 'block';
+        modalGrey.style.display = 'block';
         main.style.overflowY = 'hidden';
     }
 
@@ -75,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function closeModal() {
         modal.style.display = 'none';
         main.style.overflowY = 'scroll';
-
+        modalGrey.style.display = 'none';
     }
 
 });

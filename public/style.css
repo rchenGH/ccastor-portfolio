@@ -1,10 +1,11 @@
 * {
   margin: 0;
-  margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   color: rgba(244, 150, 189, 1);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .gallery-container {
@@ -161,6 +162,6 @@
 
 @media screen and (max-width: 576px){
   .main{
-    padding: 100px 0 0 0;
+    padding: 70px 0 0 0;
   }
 }

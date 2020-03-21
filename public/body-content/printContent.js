@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     content = () => {
         imageUlId.insertAdjacentHTML('beforeend',
             `
+            <div class="modal-grey"></div>
             <div class="modal container">
                 <div class="modal-content row">
                     <div class='close-button-wrap'>
