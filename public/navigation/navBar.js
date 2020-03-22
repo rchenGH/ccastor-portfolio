@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 <div>Cyndi Castor</div>
             </div>
             <ul class='nav-links toggle-shadow'>
-                <li><a href="index.html" class="link-text"><span style="color:transparent";>------</span>HOME<span style="color:transparent";>------</span></a></li>
-                <li>
+                <li class="nav-link"><a href="index.html" class="link-text"><span style="color:transparent";>------</span>HOME<span style="color:transparent";>------</span></a></li>
+                <li class="nav-link">
                     <a href="calligraphy.html" class="link-text">CALLIGRAPHY</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="web-mobile.html" class="link-text">WEB / MOBILE</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="print-media.html" class="link-text">PRINT MEDIA</a>
                 </li>
             </ul>
