@@ -66,6 +66,7 @@
 
 .modal-image-wrapper{
     position: relative;
+    line-height: 85vh;
     height: 100%;
     margin: 0px auto 0px auto;
 }
@@ -73,12 +74,16 @@
 .modal-large-image {
     width: 85%;
     height: auto;
-    margin: 10px;
+    vertical-align: middle;
+    margin: 20px auto 50px auto;
 }
 
 .close-button-wrap {
     position: fixed;
     height: 30px;
+    background-color: rgba(255,255,255,1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 70%;
     max-width: 800px;
     float: right;
@@ -99,7 +104,7 @@
 }
 
 .modal-expand {
-    height: 150px;
+    height: 175px;
     overflow: hidden;
 }
 
