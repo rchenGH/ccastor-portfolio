@@ -5,8 +5,12 @@
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   color: rgba(244, 150, 189, 1);
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 body::-webkit-scrollbar-track

@@ -10,12 +10,32 @@
             <script src="body-content/mainContent.js"></script>
             <script src="body-content/calligraphyContent.js"></script>
             <script src="modal/modal.js"></script>
+            <script src="loader/loader.js"></script>
+            <script type="text/javascript">
+                let resourcePath = ['navigation/navBar.js', 'body-content/mainContent.js', 
+                                    'body-content/calligraphyContent.js', 'modal/modal.js',
+                                    'loader/loader.js'
+                                ];
+                for(let i = 0; i < resourcePath.length; i++){
+                    document.querySelectorAll('.script').src = resourcePath + '?v=' + Date.now();
+                }
+             </script>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <link rel="stylesheet" type="text/css" href="responsive.css">
-            <link rel="stylesheet" type="text/css" href="navigation/navigation.css">
-            <link rel="stylesheet" type="text/css" href="modal/modal.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="style.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="responsive.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="navigation/navigation.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="modal/modal.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="loader/loader.css">
+            <script type="text/javascript">
+                let stylePath = [   'style.css', 'responsive.css', 
+                                    'navigation/navigation.css', 'modal/modal.css',
+                                    'loader/loader.js'
+                                ];
+                for(let i = 0; i < stylePath.length; i++){
+                    document.querySelectorAll('.styling').href = stylePath + '?v=' + Date.now();
+                }
+             </script>
             <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
             <script>
                 // Initialize Firebase

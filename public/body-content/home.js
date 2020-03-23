@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function content(){
         homeContainer.insertAdjacentHTML('beforeend',
             `
+            <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
             <div class="home-wrapper container">
                 <div class="name-text row name-animation">
                     Cyndi Castor
