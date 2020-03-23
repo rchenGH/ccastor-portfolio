@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 </div>
 
                 <div class='home-snippet snippet-animation'>
-                    portfolio
+                    <button class="contact-btn">
+                        <a href="mailto:ccastor323@gmail.com">
+                            CONTACT
+                        </a>
+                    </button>
                 </div>
                 
                 <div class="home-snippet row">
