@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             classItem: 'twist'
         },
         {    
+            title: 'Peppermint Twist - Pride',
+            snippet: 'Icon Gif',
+            description: 'Icon Gif (2020)',
+            image: 'new-pep-twist-pride.gif',
+            timeOut: 0,
+            classItem: 'twist-pride'
+        },
+        {    
             title: 'Highways Tiger',
             snippet: 'Engraving illustration',
             description: 'Illustration for engraving (2018)',
