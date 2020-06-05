@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Pentel sign pen',
             description: 'Modern Calligraphy - Pentel sign pen',
             image: 'be-someone.jpg',
-            timeOut: 200,
+            timeOut: 0,
             classItem: 'be-someone'
         },
         {    
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Pointed Pen Copperplate',
             description: 'Walnut Ink - Pointed Pen Copperplate',
             image: 'walnut-ink.jpg',
-            timeOut: 400,
+            timeOut: 0,
             classItem: 'walnut'
         },
         {    
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Walnut Ink',
             description: 'Walnut Ink - Copperplate.',
             image: 'candy.jpg',
-            timeOut: 600,
+            timeOut: 0,
             classItem: 'candy'
         },
         {    
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Gothic broad pen calligraphy',
             description: 'Gothic broad pen calligraphy - Pilot Parallel',
             image: 'give-goodness.jpg',
-            timeOut: 800,
+            timeOut: 0,
             classItem: 'goodness'
         },
         {    
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Pink Water Color',
             description: 'Pink Water Color - Pointed Pen copperplate',
             image: 'homer-simpson.jpg',
-            timeOut: 1000,
+            timeOut: 0,
             classItem: 'homer'
         },
         {    
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Sumi Ink',
             description: 'Sumi Ink - Pointed Pen Copperplate',
             image: 'love-letter.png',
-            timeOut: 1200,
+            timeOut: 0,
             classItem: 'love'
         },
         {    
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Sumi ink',
             description: 'Sumi Ink - Spencerian',
             image: 'pearl.jpg',
-            timeOut: 1400,
+            timeOut: 0,
             classItem: 'pearl'
         },
         {    
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Watercolor',
             description: 'Watercolor - Pointed Pen Copperplate',
             image: 'rainbow-ink.png',
-            timeOut: 1600,
+            timeOut: 0,
             classItem: 'rainbow'
         },
         {    
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Copperplate and Traditional',
             description: 'Traditional Copperplate and Modern Calligraphy',
             image: 'traditional-modern.jpg',
-            timeOut: 1800,
+            timeOut: 0,
             classItem: 'traditional'
         },
     ]
@@ -154,7 +154,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 descriptionHR.innerHTML =`<hr>`
                 descriptionText.innerHTML =`<p">${calligraphyObj[index].description}</p>`
             })
-        })
+        });
+
+        let timeOutFunc = function() {
+            for(let i = 0; i < calligraphyObj.length; i++){
+                calligraphyObj[i].timeOut += 200*[i]
+            }
+        }
+
+        timeOutFunc();
 
         calligraphyObj.forEach(calligraphy => {
             setTimeout(card, calligraphy.timeOut)

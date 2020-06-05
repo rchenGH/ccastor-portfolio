@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Front and back',
             description: 'Front and back shirt design',
             image: '6th-street-shirt.jpg',
-            timeOut: 200,
+            timeOut: 0,
             classItem: 'sixth-street'
         },
         {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Real Estate Brochure',
             description: 'Brochure',
             image: 'coldwell-gogol.jpg',
-            timeOut: 400,
+            timeOut: 0,
             classItem: 'gogol'
         },
         {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Restaurant Ad',
             description: 'Taco Bell Restaurant Ad',
             image: 'fourthmeal.jpg',
-            timeOut: 600,
+            timeOut: 0,
             classItem: 'fourth-meal'
         },
         {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Brochure',
             description: 'Real Estate Brochure',
             image: 'coldwell-kaprielian.jpg',
-            timeOut: 800,
+            timeOut: 0,
             classItem: 'kaprielian'
         },
         {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Poster',
             description: 'Team Poster (2014)',
             image: 'royal-family.png',
-            timeOut: 1000,
+            timeOut: 0,
             classItem: 'royal-family'
         },
         {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Overhead',
             description: 'Overhead view',
             image: 'floors.jpg',
-            timeOut: 1200,
+            timeOut: 0,
             classItem: 'floors'
         },
         {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Wedding Invitation',
             description: 'Wedding Invitation',
             image: 'invitation.jpg',
-            timeOut: 1400,
+            timeOut: 0,
             classItem: 'invitation'
         },
         {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Layout',
             description: 'Bird\'s Eye View Layout',
             image: 'overview.jpg',
-            timeOut: 1600,
+            timeOut: 0,
             classItem: 'overview'
         },
         {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Top 10',
             description: 'Red Pill Cheer - Top 10 List',
             image: 'red-pill-top-10.png',
-            timeOut: 1800,
+            timeOut: 0,
             classItem: 'rcp-list'
         },
         {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Poster',
             description: 'Poster',
             image: 'red-pill.jpg',
-            timeOut: 2000,
+            timeOut: 0,
             classItem: 'rcp-cover'
         },
         {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'RSVP Details',
             description: 'RSVP Details',
             image: 'rsvp-details.jpg',
-            timeOut: 2200,
+            timeOut: 0,
             classItem: 'rsvp-details'
         },
         {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Printed Ads',
             description: 'Printed Ads',
             image: 'taco-wall-1.jpg',
-            timeOut: 2400,
+            timeOut: 0,
             classItem: 'printed-ads-1'
         },
         {
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Registration Cost',
             description: 'Red Pill Cheer - Registration Cost',
             image: 'red-pill-price.png',
-            timeOut: 2600,
+            timeOut: 0,
             classItem: 'rpc-prices'
         },
         {
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Printed Ads',
             description: 'Printed Ads',
             image: 'taco-wall-2.jpg',
-            timeOut: 2800,
+            timeOut: 0,
             classItem: 'printed-ad-2'
         },
     ]
@@ -196,6 +196,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 descriptionText.innerHTML =`<p">${printObj[index].description}</p>`
             })
         })
+
+        let timeOutFunc = function() {
+            for(let i = 0; i < printObj.length; i++){
+                printObj[i].timeOut += 200*[i]
+            }
+        }
+
+        timeOutFunc();
 
         printObj.forEach(print => {
             setTimeout(card, print.timeOut)

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Multi-page banner',
             description: 'Multi-page banner',
             image: 'app-store-images.jpg',
-            timeOut: 200,
+            timeOut: 0,
             classItem: 'multi-banner'
         },
         {    
@@ -17,15 +17,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Holiday Card',
             description: 'Hand calligraphy digitized holiday card (2017)',
             image: 'holiday-card.jpg',
-            timeOut: 400,
+            timeOut: 0,
             classItem: 'holiday'
+        },
+        {    
+            title: 'Peppermint Twist',
+            snippet: 'Icon Gif',
+            description: 'Icon Gif (2020)',
+            image: 'new-pep-twist.gif',
+            timeOut: 0,
+            classItem: 'twist'
         },
         {    
             title: 'Highways Tiger',
             snippet: 'Engraving illustration',
             description: 'Illustration for engraving (2018)',
             image: 'highways-tiger.jpg',
-            timeOut: 600,
+            timeOut: 0,
             classItem: 'tiger'
         },
         {    
@@ -33,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Website Layout',
             description: 'PocketMe website layout (2017)',
             image: 'pocketme-web.jpg',
-            timeOut: 800,
+            timeOut: 0,
             classItem: 'pocket-layout'
         },
         {    
@@ -41,8 +49,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             snippet: 'Streamer Asset',
             description: 'Twitch streamer assets - subscription icons',
             image: 'kylie-subscribers.jpg',
-            timeOut: 1000,
+            timeOut: 0,
             classItem: 'kylie-sub'
+        },
+        {    
+            title: 'GG Logo',
+            snippet: 'logo',
+            description: 'logo (2020)',
+            image: 'gg-logo.png',
+            timeOut: 0,
+            classItem: 'gg-logo'
         },
         {    
             title: 'Ganymede\'s Girls Pride Logo',
@@ -50,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Ganymede\'s Girls Gaming Community Pride Logo (2018)',
             image: 'ganymedes-girls.png',
             classItem: 'pride-logo',
-            timeOut: 1200,
+            timeOut: 0,
         },
         {    
             title: 'Super Duper',
@@ -58,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Site info - octagonal floor tiles used as inspiration and backdrop is the Super Duper tray liner (2018)',
             image: 'super-duper.jpg',
             classItem: 'super-duper',
-            timeOut: 1400,
+            timeOut: 0,
         },
         {    
             title: 'Bree\'s Subs',
@@ -66,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Twitch subcription icons',
             image: 'brees-subs.jpg',
             classItem: 'bree-sub',
-            timeOut: 1600,
+            timeOut: 0,
         },
         {    
             title: 'DedlyKittns Emotes',
@@ -74,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Twitch Streamer Assets - Emotes (2018)',
             image: 'dedlykittns-emotes.jpg',
             classItem: 'dedly-kittns',
-            timeOut: 1800,
+            timeOut: 0,
         },
         {    
             title: 'Freeze Time',
@@ -82,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Digital advertisement for PocketMe (2017)',
             image: 'freeze-time.jpg',
             classItem: 'freeze-time',
-            timeOut: 2000,
+            timeOut: 0,
         },
         {    
             title: 'Ganymedes Redesign',
@@ -90,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Ganymede\'s Girls Gaming Community logo redesign (2018)',
             image: 'ganymede-redesign.png',
             classItem: 'redesign',
-            timeOut: 2200,
+            timeOut: 0,
         },
         {    
             title: 'Ganymede\s Girls Pride',
@@ -98,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Ganymede\'s Girls Gaming Community Pride T-Shirt (2019)',
             image: 'ganymedes-girl-pride.png',
             classItem: 'pride-shirt',
-            timeOut: 2400,
+            timeOut: 0,
         },
         {    
             title: 'CynCity Sticker',
@@ -106,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Asset Media',
             image: 'cyncity-sticker.gif',
             classItem: 'cyn-sticker',
-            timeOut: 2600,
+            timeOut: 0,
         },
         {    
             title: 'Cake Topper',
@@ -114,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Digital ad for PocketMe (2017)',
             image: 'cake-topper.jpg',
             classItem: 'topper',
-            timeOut: 2800,
+            timeOut: 0,
         },
         {    
             title: 'Offline Scene',
@@ -122,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Twitch Streamer Asset - Splash Page',
             image: 'offline-scene.jpg',
             classItem: 'offline',
-            timeOut: 3000,
+            timeOut: 0,
         },
         {    
             title: 'Team Callisto Banner',
@@ -130,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'ESports Team Poster (2018)',
             image: 'team-callisto-banner.jpg',
             classItem: 'callisto',
-            timeOut: 3200,
+            timeOut: 0,
         },
         {    
             title: '3d Images',
@@ -138,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             description: 'Frame by Frame 3D image animation - digital advertisement (2017)',
             image: '3d-images.gif',
             classItem: 'ad-images',
-            timeOut: 3400,
+            timeOut: 0,
         },
     ]
 
@@ -217,6 +233,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 descriptionText.innerHTML =`<p">${webMobileObj[index].description}</p>`
             })
         })
+
+        let timeOutFunc = function() {
+            for(let i = 0; i < webMobileObj.length; i++){
+                webMobileObj[i].timeOut += 200*[i]
+            }
+        }
+
+        timeOutFunc();
 
         webMobileObj.forEach(webMobile => {
             setTimeout(card, webMobile.timeOut)
