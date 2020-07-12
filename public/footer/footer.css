@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: 200px;
+    z-index: -1;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+}
+
+.footer-content {
+    margin: auto;
+    padding-top: 50px;
+}

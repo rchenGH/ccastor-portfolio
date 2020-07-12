@@ -44,10 +44,12 @@ body::-webkit-scrollbar-track
 
 .main{
   z-index: 1;
-  height: 100vh;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 200px 70px 0 70px;
+  box-shadow: 0 -30px 25px 30px rgba(0, 0, 0, 0.16), 0px -5px 0px 4px rgba(0, 0, 0, 0.23);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .image-ul {

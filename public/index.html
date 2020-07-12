@@ -13,11 +13,12 @@
             <script class='script'src="body-content/homeContent.js"></script>
             <script class='script'src="body-content/home.js"></script>
             <script class='script'src="loader/loader.js"></script>
+            <script class='script'src="footer/footer.js"></script>
             <script type="text/javascript">
                 let resourcePath = ['navigation/navBar.js', 'body-content/homeContent.js', 
-                                    'body-content/home.js', 'loader/loader.js'];
+                                    'body-content/home.js', 'loader/loader.js', 'footer/footer.js'];
                 for(let i = 0; i < resourcePath.length; i++){
-                    document.querySelectorAll('.script').src = resourcePath + '?v=' + Date.now();
+                    document.querySelectorAll('.script').src = resourcePath[i] + '?v=' + Date.now();
                 }
              </script>
             <link class="styling" rel="stylesheet" type="text/css" href="style.css">
@@ -25,11 +26,12 @@
             <link class="styling" rel="stylesheet" type="text/css" href="navigation/navigation.css">
             <link class="styling" rel="stylesheet" type="text/css" href="home/home.css">
             <link class="styling" rel="stylesheet" type="text/css" href="loader/loader.css">
+            <link class="styling" rel="stylesheet" type="text/css" href="footer/footer.css">
             <script type="text/javascript">
                 let stylePath = [   'style.css', 'responsive.css', 'navigation/navigation.css', 
                                     'home/home.css', 'loader/loader.css'];
                 for(let i = 0; i < stylePath.length; i++){
-                    document.querySelectorAll('.styling').href = stylePath + '?v=' + Date.now();
+                    document.querySelectorAll('.styling').href = stylePath[i] + '?v=' + Date.now();
                 }
              </script>
 

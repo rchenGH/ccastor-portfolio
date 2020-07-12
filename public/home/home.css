@@ -4,6 +4,10 @@
     margin-left: auto;
 }
 
+.home-container{
+    height: calc(100vh - 252px);
+}
+
 .name-text {
     font-family: 'Questrial';
     font-size: 100px;
@@ -99,7 +103,6 @@
     border: none;
     font-size: 14px;
     margin-left: -50px;
-    float:right;
 }
 
 .contact-btn a{
