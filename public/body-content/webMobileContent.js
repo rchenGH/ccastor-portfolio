@@ -5,14 +5,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     let webMobileObj = [
         {    
-            title: 'App Store Images',
-            snippet: 'Multi-page banner',
-            description: 'Multi-page banner',
-            image: 'app-store-images.jpg',
-            timeOut: 0,
-            classItem: 'multi-banner'
-        },
-        {    
             title: 'Holiday Card',
             snippet: 'Holiday Card',
             description: 'Hand calligraphy digitized holiday card (2017)',
@@ -43,14 +35,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             image: 'highways-tiger.jpg',
             timeOut: 0,
             classItem: 'tiger'
-        },
-        {    
-            title: 'PocketMe Web',
-            snippet: 'Website Layout',
-            description: 'PocketMe website layout (2017)',
-            image: 'pocketme-web.jpg',
-            timeOut: 0,
-            classItem: 'pocket-layout'
         },
         {    
             title: 'Kylie Subscribers',
@@ -101,51 +85,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             timeOut: 0,
         },
         {    
-            title: 'Freeze Time',
-            snippet: 'Digital Ad',
-            description: 'Digital advertisement for PocketMe (2017)',
-            image: 'freeze-time.jpg',
-            classItem: 'freeze-time',
-            timeOut: 0,
-        },
-        {    
             title: 'Ganymedes Redesign',
             snippet: 'Logo Redesign',
             description: 'Ganymede\'s Girls Gaming Community logo redesign (2018)',
             image: 'ganymede-redesign.png',
             classItem: 'redesign',
-            timeOut: 0,
-        },
-        {    
-            title: 'Ganymede\s Girls Pride',
-            snippet: 'Gaming Community T-Shirt',
-            description: 'Ganymede\'s Girls Gaming Community Pride T-Shirt (2019)',
-            image: 'ganymedes-girl-pride.png',
-            classItem: 'pride-shirt',
-            timeOut: 0,
-        },
-        {    
-            title: 'CynCity Sticker',
-            snippet: 'Asset Media',
-            description: 'Asset Media',
-            image: 'cyncity-sticker.gif',
-            classItem: 'cyn-sticker',
-            timeOut: 0,
-        },
-        {    
-            title: 'Cake Topper',
-            snippet: 'Digital ad',
-            description: 'Digital ad for PocketMe (2017)',
-            image: 'cake-topper.jpg',
-            classItem: 'topper',
-            timeOut: 0,
-        },
-        {    
-            title: 'Offline Scene',
-            snippet: 'Streamer Asset',
-            description: 'Twitch Streamer Asset - Splash Page',
-            image: 'offline-scene.jpg',
-            classItem: 'offline',
             timeOut: 0,
         },
         {    

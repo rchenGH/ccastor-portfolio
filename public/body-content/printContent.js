@@ -3,14 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let imageUlId = document.querySelector('#image-ul-id');
 
     let printObj = [
-        {    
-            title: '6th-Street',
-            snippet: 'Front and back',
-            description: 'Front and back shirt design',
-            image: '6th-street-shirt.jpg',
-            timeOut: 0,
-            classItem: 'sixth-street'
-        },
         {
             title: 'Gogol',
             snippet: 'Real Estate Brochure',
@@ -36,14 +28,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             classItem: 'kaprielian'
         },
         {
-            title: 'Royal Family',
-            snippet: 'Poster',
-            description: 'Team Poster (2014)',
-            image: 'royal-family.png',
-            timeOut: 0,
-            classItem: 'royal-family'
-        },
-        {
             title: 'Floors',
             snippet: 'Overhead',
             description: 'Overhead view',
@@ -52,20 +36,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
             classItem: 'floors'
         },
         {
-            title: 'Invitation',
-            snippet: 'Wedding Invitation',
-            description: 'Wedding Invitation',
-            image: 'invitation.jpg',
-            timeOut: 0,
-            classItem: 'invitation'
-        },
-        {
             title: 'Overview',
             snippet: 'Layout',
             description: 'Bird\'s Eye View Layout',
             image: 'overview.jpg',
             timeOut: 0,
             classItem: 'overview'
+        },
+        {
+            title: 'Restaurant Ads - First Set',
+            snippet: 'Printed Ads',
+            description: 'Printed Ads',
+            image: 'taco-wall-1.jpg',
+            timeOut: 0,
+            classItem: 'printed-ads-1'
+        },
+        {
+            title: 'Restaurant Ads - Second Set',
+            snippet: 'Printed Ads',
+            description: 'Printed Ads',
+            image: 'taco-wall-2.jpg',
+            timeOut: 0,
+            classItem: 'printed-ad-2'
+        },
+        {
+            title: 'Invitation',
+            snippet: 'Wedding Invitation',
+            description: 'Wedding Invitation',
+            image: 'invitation.jpg',
+            timeOut: 0,
+            classItem: 'invitation'
         },
         {
             title: 'RPC List',
@@ -92,28 +92,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             classItem: 'rsvp-details'
         },
         {
-            title: 'Restaurant Ads - First Set',
-            snippet: 'Printed Ads',
-            description: 'Printed Ads',
-            image: 'taco-wall-1.jpg',
-            timeOut: 0,
-            classItem: 'printed-ads-1'
-        },
-        {
             title: 'RPC Prices',
             snippet: 'Registration Cost',
             description: 'Red Pill Cheer - Registration Cost',
             image: 'red-pill-price.png',
             timeOut: 0,
             classItem: 'rpc-prices'
-        },
-        {
-            title: 'Restaurant Ads - Second Set',
-            snippet: 'Printed Ads',
-            description: 'Printed Ads',
-            image: 'taco-wall-2.jpg',
-            timeOut: 0,
-            classItem: 'printed-ad-2'
         },
     ]
     content = () => {
